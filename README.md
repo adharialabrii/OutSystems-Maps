@@ -82,7 +82,7 @@ https://api.zippopotam.us/us/90210
 
 Example Response
 
-json
+```json
 {
   "country": "United States",
   "country abbreviation": "US",
@@ -93,10 +93,11 @@ json
       "longitude": "-118.4065",
       "latitude": "34.0901",
       "state": "California",
-      "state abbreviation": "CA" 
+      "state abbreviation": "CA"
     }
   ]
 }
+```
 
 ---
 
