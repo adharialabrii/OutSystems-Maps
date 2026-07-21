@@ -1,6 +1,6 @@
 # OutSystems-Maps
 
-A simple web application built with **OutSystems** that allows users to search for a location using a ZIP code and visualize the result on an interactive **Leaflet** map.
+A simple web application built with **OutSystems** that allows users to search for a location in the United States using a ZIP code and visualize the result on an interactive **Leaflet** map.
 
 The application retrieves real-time location information from the **Zippopotam.us API**, places a marker on the map, and automatically stores every successful search in the user's history.
 
@@ -24,7 +24,7 @@ https://personal-aj6wpmjr.outsystemscloud.com/Maps/Login
 ## Features
 
 - User authentication
-- Search locations by ZIP code
+- Search US locations by ZIP code
 - Interactive Leaflet map
 - Automatic map markers
 - Displays place name and coordinates
@@ -59,7 +59,7 @@ https://personal-aj6wpmjr.outsystemscloud.com/Maps/Login
 ## 🚀 How It Works
 
 1. Log into the application.
-2. Enter a valid ZIP code.
+2. Enter a valid US ZIP code.
 3. Click **Search**.
 4. The application sends a request to the **Zippopotam.us API**.
 5. The returned location is displayed on a **Leaflet** map.
@@ -74,12 +74,15 @@ This application uses the **Zippopotam.us API**.
 
 **Base URL**
 
+```text
 https://api.zippopotam.us/
+```
 
 Example Request
 
+```text
 https://api.zippopotam.us/us/90210
-
+```
 Example Response
 
 ```json
@@ -133,7 +136,7 @@ Each search stores the following information:
 
 ## Notes
 
-- Only valid ZIP codes are accepted.
+- Only valid US ZIP codes are accepted.
 - Data is retrieved live from the Zippopotam.us API.
 - Internet access is required.
 - Map tiles are provided through Leaflet/OpenStreetMap.
